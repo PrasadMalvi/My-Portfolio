@@ -12,6 +12,11 @@ body{
     background: #080808;
     color: white ;
 }
+.nav1{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 #header{
     height: 100vh;
@@ -66,7 +71,7 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 20%;
+    margin-top: 30%;
     font-size: 20px;
 }
 
@@ -77,6 +82,26 @@ nav ul li a:hover::after{
 
 .header-text h1 span{
     color: #ff004f;
+}
+.container .text{
+    position: relative;
+    color: #ff004f;
+    font-size: 30px;
+    font-weight: 600;
+}
+.container .first-text{
+    color: #FFF;
+}
+.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #080808;
+    border-left: 2px solid #ff004f;
+    animation: animate 4s steps(12) infinite;
 }
 
 /* -------------------About------------------- */
@@ -481,4 +506,12 @@ nav .fa-solid{
 
 .box-content p{
     color: #007185;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
 }

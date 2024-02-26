@@ -1,0 +1,34 @@
+<div class="skills">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="skill-list">
+            <div class="skill">
+                <img src="skill-1.jpg">
+                <div class="layer">
+                    <i class="fa-brands fa-hire-a-helper"></i>
+                    <h2>TEACHHIRE.COM</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, modi, ipsum repellendus ducimus praesentium velit commodi quisquam officia totam suscipit voluptas eveniet nihil atque? Quaerat non nesciunt aliquid rem iure.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="skill-2.jpeg">
+                <div class="layer">
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Librasys</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, modi, ipsum repellendus ducimus praesentium velit commodi quisquam officia totam suscipit voluptas eveniet nihil atque? Quaerat non nesciunt aliquid rem iure.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="skill-3.jpeg">
+                <div class="layer">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h2>Portfolio</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, modi, ipsum repellendus ducimus praesentium velit commodi quisquam officia totam suscipit voluptas eveniet nihil atque? Quaerat non nesciunt aliquid rem iure.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

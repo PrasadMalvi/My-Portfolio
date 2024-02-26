@@ -10,8 +10,8 @@
 <body>
     <div id="header">
         <div class="container">
-            <nav>
-                <img src="logo.png" class="logo">
+            <nav class="nav1">
+                <img src="./img/logo.png" class="logo">
                 <!-- <h1 id="myname"><span>Prasad</span> Malvi</h1> -->
                 
                 <ul id="sidemenu">
@@ -25,8 +25,9 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Full Stack Developer</p>
-                <h1>Hi, I'm <span> Prasad Malvi</span><br> From Bangalore</h1>
+                <p>Hi, I'm <span><h1>Prasad Malvi</h1> </span><br></p>
+                <span class="text first-text">I'm a</span> 
+                <span class="text sec-text">MERN Developer</span>
             </div>
         </div>
     </div>
@@ -35,7 +36,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="photo2.jpg">
+                    <img src="./img/photo2.jpg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -115,30 +116,30 @@
         <h1 class="sub-title">Portfolio</h1>
         <div class="skill-list">
             <div class="skill">
-                <img src="hire2">
+                <img src="./img/hire2">
                 <div class="layer">
                     <i class="fa-brands fa-hire-a-helper"></i>
                     <h2>TEACHHIRE.COM</h2>
                     <p>Developed a web application aimed at streamlining the process of hiring teachers. The platform allows teachers and fresh candidates to easily find and apply for job opportunities in schools or colleges.</p>
-                    <a href="https://github.com/PrasadMalvi"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/PrasadMalvi/TEACHHIRE.COM"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="skill">
-                <img src="library-3.png.png">
+                <img src="./img/library-3.png.png">
                 <div class="layer">
                     <i class="fa-solid fa-book"></i>
                     <h2>LIBRASYS</h2>
                     <p>LibraSys, driven by Java, HTML, CSS, and SQL JDBC within the NetBeans framework, is reshaping library management. Elevate your library's efficiency, accessibility, and patron engagement added new features as digital newspaper magazines with our cutting-edge system. Join us in advancing library operations to new heights.</p>
-                    <a href="https://github.com/PrasadMalvi"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/PrasadMalvi/Librasys"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="skill">
-                <img src="port">
+                <img src="./img/port">
                 <div class="layer">
                     <i class="fa-solid fa-briefcase"></i>
                     <h2>PORTFOLIO</h2>
                     <p>Experience my portfolio project, a seamless fusion of CSS3, HTML5, and JavaScript. This dynamic website showcases my proficiency in creating visually striking and user-friendly interfaces. Utilizing Google Sheets integration, I've implemented efficient data management, adding an extra layer of functionality to the overall user experience. Explore a demonstration of my skills in action, bringing ideas to life through modern web development technologies.</p>
-                    <a href="https://github.com/PrasadMalvi"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/PrasadMalvi/My-Portfolio"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </div>
@@ -271,6 +272,22 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+  <script>
+    const text = document.querySelector(".sec-text");
+    const Load = () =>{
+        setTimeout(()=>{
+            text.textContent = "Web Developer";
+        },0);
+        setTimeout(()=>{
+            text.textContent = "MERN Developer";
+        },4000);
+        setTimeout(()=>{
+            text.textContent = "Front-end Developer";
+        },8000);
+    }
+    Load();
+    setInterval(Load,12000);
   </script>
 </body>
 </html>
